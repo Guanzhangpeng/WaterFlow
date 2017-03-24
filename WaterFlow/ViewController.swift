@@ -11,7 +11,7 @@ private let kCellID = "kCellID"
 
 class ViewController: UIViewController
 {
-    fileprivate var itemCount = 100
+    fileprivate var itemCount = 20
     
     fileprivate lazy var collectionView : UICollectionView = {
         
@@ -54,12 +54,12 @@ extension ViewController : UICollectionViewDataSource,UICollectionViewDelegate
         return cell
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.y > scrollView.contentSize.height - scrollView.bounds.height {
-            itemCount += 100
-            collectionView.reloadData()
-        }
-    }
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        if scrollView.contentOffset.y > scrollView.contentSize.height - scrollView.bounds.height {
+//            itemCount += 100
+//            collectionView.reloadData()
+//        }
+//    }
     
 }
 
